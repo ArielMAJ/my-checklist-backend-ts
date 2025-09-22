@@ -1,7 +1,9 @@
 import express from "express";
 import type { Task } from "./types.ts";
+import cors from "cors";
 
 const app = express();
+app.use(cors());
 
 const listaDeTarefas: Task[] = [
   {
