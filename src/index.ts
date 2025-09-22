@@ -3,7 +3,23 @@ import type { Task } from "./types.ts";
 
 const app = express();
 
-const listaDeTarefas: Task[] = [];
+const listaDeTarefas: Task[] = [
+  {
+    title: "Praticar fullstack",
+    description:
+      "Fazer atividades práticas e desenvolver uma aplicação web com front e backend. Também praticar conectar o front com o backend.",
+  },
+  {
+    title: "Praticar backend",
+    description:
+      "Criar mais endpoints, incluindo endpoint de criação de tarefas.",
+  },
+  {
+    title: "Praticar frontend",
+    description:
+      "Criar mais funcionalidades, incluindo um formulário para envio de tarefas novas.",
+  },
+];
 
 app.use(express.json());
 
